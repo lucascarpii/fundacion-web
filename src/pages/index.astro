@@ -1,10 +1,12 @@
 ---
 import { Header } from "../components/Header";
 import { Hero } from "../components/Home/Hero";
+import { PopularArticles } from "../components/Home/PopularArticles";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <Header  client:visible />
+  <Header client:visible />
   <Hero client:visible />
+  <PopularArticles client:visible />
 </Layout>
