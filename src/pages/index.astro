@@ -1,8 +1,10 @@
 ---
+import { Header } from "../components/Header";
 import { Hero } from "../components/Home/Hero";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+  <Header  client:visible />
   <Hero client:visible />
 </Layout>
