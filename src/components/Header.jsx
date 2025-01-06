@@ -34,7 +34,7 @@ export function Header() {
 
   return (
     <>
-      <nav className="absolute inset-0 z-20 h-fit font-red-hat">
+      <nav className="absolute inset-0 z-20 h-fit ">
         <div className={`flex items-center justify-between h-[90px] overflow-hidden max-w-screen-xl mx-auto px-10 2xl:px-0 text-white`}>
           <img className="w-12 object-cover" src="logo_blanco.png" alt="Logo Blanco" />
 
@@ -71,7 +71,7 @@ export function Header() {
             ))}
           </ul>
 
-          <button className="w-36 tracking-widest hidden lg:block text-xs font-semibold uppercase border-2 hover:bg-isei-blue hover:border-transparent transition-all duration-200 text-white pt-3 pb-[11px] px-3">
+          <button className="w-32 tracking-widest hidden lg:block text-xs font-semibold uppercase border-2 hover:bg-isei-blue hover:border-transparent transition-all duration-200 text-white pt-3 pb-[11px] px-3">
             Me interesa
           </button>
 
