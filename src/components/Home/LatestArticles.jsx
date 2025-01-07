@@ -57,6 +57,10 @@ export const LatestArticles = () => {
     currentPage * articlesPerPage
   );
 
+  const handlePageClick = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <div className="max-w-screen-xl mx-auto px-4 py-8">
       <h2 className="text-4xl mb-6">Latest Articles</h2>
@@ -86,8 +90,8 @@ export const LatestArticles = () => {
             <button
               key={index + 1}
               className={`size-8 text-sm font-medium rounded-full ${currentPage === index + 1
-                  ? "bg-lime-300 "
-                  : "hover:bg-gray-200"
+                ? "bg-lime-300 "
+                : "hover:bg-gray-200"
                 }`}
               onClick={() => handlePageClick(index + 1)}
             >
