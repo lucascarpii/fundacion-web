@@ -1,6 +1,7 @@
 ---
 import { Header } from "../components/Header";
 import { Hero } from "../components/Home/Hero";
+import { LatestArticles } from "../components/Home/LatestArticles";
 import { PopularArticles } from "../components/Home/PopularArticles";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -9,4 +10,5 @@ import Layout from "../layouts/Layout.astro";
   <Header client:visible />
   <Hero client:visible />
   <PopularArticles client:visible />
+  <LatestArticles client:visible />
 </Layout>

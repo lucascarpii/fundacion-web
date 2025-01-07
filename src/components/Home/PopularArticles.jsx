@@ -41,11 +41,13 @@ export const PopularArticles = () => {
         {articles
           .filter((article) => article.isMain)
           .map((article) => (
-            <div key={article.id} className="flex flex-col">
-              <div className="bg-gray-300 h-2/3 w-full mb-4"></div>
+            <div key={article.id} className="flex flex-col h-full">
+              <div className="bg-gray-300 aspect-[7/6] w-full mb-5"></div>
               <p className="text-sm text-gray-500">{article.date}</p>
-              <h3 className="text-3xl mt-2">{article.title}</h3>
-              <p className="text-gray-700 text-lg mt-2">{article.description}</p>
+              <div className="mt-auto">
+                <h3 className="text-3xl mt-2">{article.title}</h3>
+                <p className="text-gray-700 text-lg mt-2">{article.description}</p>
+              </div>
             </div>
           ))}
 
@@ -55,10 +57,10 @@ export const PopularArticles = () => {
             .filter((article) => !article.isMain)
             .map((article) => (
               <div key={article.id} className="grid gap-5 grid-cols-2">
-                <div className="bg-gray-300 w-full aspect-video mr-4"></div>
+                <div className="bg-gray-300 w-full aspect-[4/3] mr-4"></div>
                 <div className="flex relative flex-col justify-center">
                   <p className="text-sm absolute top-0 text-gray-500">{article.date}</p>
-                  <h4 className="text-xl font-medium">{article.title}</h4>
+                  <h4 className="text-2xl font-medium">{article.title}</h4>
                 </div>
               </div>
             ))}
