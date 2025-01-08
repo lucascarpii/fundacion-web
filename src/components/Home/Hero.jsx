@@ -19,7 +19,7 @@ export function Hero() {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
           >
             Utilization of technology to
           </motion.span>
@@ -27,7 +27,7 @@ export function Hero() {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             Support Enviromentally
           </motion.span>
@@ -35,7 +35,7 @@ export function Hero() {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
             Friendly Agriculture
           </motion.span>
@@ -43,7 +43,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
           className="flex items-center bg-white rounded-full p-1 mt-10">
           <SearchIcon className="size-5 ms-3 me-2 text-gray-400" />
           <input
