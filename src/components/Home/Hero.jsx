@@ -13,15 +13,15 @@ export function Hero() {
         </div>
       </div>
 
-      <div id="overlay" className="bg-black/20 absolute inset-0"></div>
+      <div id="overlay" className="bg-black/40 absolute inset-0"></div>
       <section className="max-w-screen-xl flex justify-center items-center lg:items-start mx-auto flex-col text-center lg:text-start w-full z-40">
-        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-normal text-white">
+        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-white">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
-            Utilization of technology to
+            La <span className="font-medium text-sky-400">educación</span>
           </motion.span>
           <br />
           <motion.span
@@ -29,7 +29,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Support Enviromentally
+            como factor principal
           </motion.span>
           <br />
           <motion.span
@@ -37,10 +37,18 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Friendly Agriculture
+            Para la <span className="font-medium text-sky-400">pacificación</span>
+          </motion.span>
+          <br />
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            y el <span className="font-medium text-sky-400">progreso</span>
           </motion.span>
         </h1>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -54,7 +62,7 @@ export function Hero() {
           <button className="bg-[#d0f249] text-black flex text-sm font-medium gap-2 ps-3 items-center rounded-full p-1.5">
             Search <span className="bg-black text-white rounded-full p-0.5"> <ArrowRightIcon /></span>
           </button>
-        </motion.div>
+        </motion.div> */}
       </section>
     </main>
   )

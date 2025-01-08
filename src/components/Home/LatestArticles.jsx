@@ -57,6 +57,26 @@ export const LatestArticles = () => {
     currentPage * articlesPerPage
   );
 
+  const getVisiblePages = () => {
+    const visiblePages = 5;
+    const pages = [];
+
+    // Lógica para centrar las páginas alrededor de la actual
+    let startPage = Math.max(1, currentPage - Math.floor(visiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + visiblePages - 1);
+
+    // Ajustar si hay menos páginas al principio o al final
+    if (endPage - startPage < visiblePages - 1) {
+      startPage = Math.max(1, endPage - visiblePages + 1);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+
+    return pages;
+  };
+
   const handlePageClick = (page) => {
     setCurrentPage(page);
   };
@@ -80,30 +100,32 @@ export const LatestArticles = () => {
         <button
           className="rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm"
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
         >
           <ArrowRightIcon className="rotate-180 size-5" />
           Previous
         </button>
 
-        <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: totalPages }, (_, index) => (
+        <div className="flex items-center justify-center space-x-2">
+          {getVisiblePages().map((page, index) => (
             <button
-              key={index + 1}
-              className={`size-8 text-sm font-medium rounded-full ${currentPage === index + 1
-                ? "bg-lime-300 "
-                : "hover:bg-gray-200"
-                }`}
-              onClick={() => handlePageClick(index + 1)}
+              key={index}
+              className={`size-8 text-sm font-medium rounded-full ${
+                currentPage === page
+                  ? "bg-lime-300"
+                  : "hover:bg-gray-200"
+              }`}
+              onClick={() => handlePageClick(page)}
             >
-              {index + 1}
+              {page}
             </button>
           ))}
-          {totalPages > 5 && <span className="size-8 text-sm text-gray-500">...</span>}
         </div>
 
         <button
           className="rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm"
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          disabled={currentPage === totalPages}
         >
           Next
           <ArrowRightIcon className="size-5" />
@@ -111,4 +133,5 @@ export const LatestArticles = () => {
       </div>
     </div>
   );
+  
 };
