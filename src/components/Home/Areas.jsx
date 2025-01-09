@@ -14,7 +14,20 @@ const areas = [
 export function Areas() {
   return (
     <section className="relative overflow-hidden">
-      <svg className="w-full absolute h-full opacity-[0.08] text-base-400/70 xl:scale-110" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><pattern height="60" id="grid-pattern" patternUnits="userSpaceOnUse" width="60"><path d="M 60 0 L 0 0 0 60" stroke="currentColor" fill="none" strokeWidth="2"></path></pattern></defs><rect fill="url(#grid-pattern)" height="100%" width="100%"></rect></svg>
+      <svg className="w-full absolute h-full opacity-20 text-base-400/70" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            height="78"
+            id="grid-pattern"
+            patternUnits="userSpaceOnUse"
+            width="78">
+            <path d="M 78 0 L 0 0 0 78" stroke="currentColor" fill="none" strokeWidth="1">
+            </path>
+          </pattern>
+        </defs>
+        <rect fill="url(#grid-pattern)" height="100%" width="100%">
+        </rect>
+      </svg>
       <div className='absolute w-full h-full bg-gradient-to-b from-white via-transparent to-white'></div>
       <div className='max-w-screen-2xl mx-auto py-28 flex flex-col justify-between gap-28'>
         <h2 className='text-center relative text-5xl font-light tracking-wide'>Explora nuestros <span className='bg-lime-500 text-white ms-1 px-3'> áreas de trabajo </span></h2>
