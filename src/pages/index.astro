@@ -6,13 +6,15 @@ import { LatestArticles } from "../components/Home/LatestArticles";
 import { PopularArticles } from "../components/Home/PopularArticles";
 import { Footer } from "../components/Footer";
 import Layout from "../layouts/Layout.astro";
+import { VideoSection } from "../components/Home/VideoSection";
 ---
 
 <Layout>
   <Header client:visible />
   <Hero client:visible />
-  <!-- <Areas client:visible /> -->
+  <Areas client:visible />
   <PopularArticles client:visible />
   <LatestArticles client:visible />
+  <!-- <VideoSection client:visible /> -->
   <Footer client:visible />
 </Layout>

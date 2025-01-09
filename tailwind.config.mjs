@@ -4,6 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				'isei-footer': '#07111a',
 				'isei-nav': '#24384d',
 				'isei-dark': '#23597e',
 				'isei-blue': '#3078ac',
@@ -11,6 +12,8 @@ export default {
 			},
 			backgroundImage: {
 				'hero-image': "url('/hero-image.jpg')",
+				'radial-gradient': 'radial-gradient(circle, white, transparent)',
+				'reverse-radial-gradient': 'radial-gradient(circle, transparent, white)',
 			},
 		},
 	},
