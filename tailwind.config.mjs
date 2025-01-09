@@ -12,9 +12,9 @@ export default {
 				'title-black': '#101829',
 			},
 			backgroundImage: {
-				'hero-image': "url('/hero-image.jpg')",
+				'hero-image': "url('/hero-image.webp')",
 				'radial-gradient': 'radial-gradient(circle, white, transparent)',
-				'reverse-radial-gradient': 'radial-gradient(circle, transparent, white)',
+				'hero-radial-gradient': 'radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(255,255,255,1) 80%)',
 			},
 		},
 	},

@@ -28,3 +28,4 @@ pnpm-debug.log*
 *.jpeg
 *.png
 *.mp4
+*.webp

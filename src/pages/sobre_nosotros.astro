@@ -1,0 +1,12 @@
+---
+import { Header } from "../components/Header";
+import Layout from "../layouts/Layout.astro";
+import { VideoSection } from "../components/Home/VideoSection";
+import { Hero } from "../components/About/Hero";
+---
+
+<Layout>
+  <Header theme="light" client:visible />
+  <Hero client:visible />
+  <!-- <VideoSection client:visible /> -->
+</Layout>
