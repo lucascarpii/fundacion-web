@@ -5,7 +5,7 @@ import { MapPinIcon } from '../icons/MapPinIcon';
 
 export const Footer = () => {
   return (
-    <footer className="p-4 bg-isei-nav sm:py-12">
+    <footer className="p-4 bg-gradient-to-tl from-isei-footer to-isei-nav sm:py-12">
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -14,10 +14,10 @@ export const Footer = () => {
               <span className="self-center text-white text-xl font-semibold whitespace-nowrap">Fundación Neuquen Oeste</span>
             </a>
             <div className="flex flex-col gap-3 mt-6 text-gray-400">
-              <a href="tel:+542994469745" target='_blank'  className="flex items-center">
+              <a href="tel:+542994469745" target='_blank' className="flex items-center">
                 <PhoneIcon className="mr-2" /> (0299) 4469745
               </a>
-              <a href="mailto:contacto@fundacionnqnoeste.com" target='_blank'  className="flex items-center">
+              <a href="mailto:contacto@fundacionnqnoeste.com" target='_blank' className="flex items-center">
                 <MailIcon className="mr-2" /> contacto@fundacionnqnoeste.com
               </a>
               <a target='_blank' href="https://www.google.com/maps/search/?api=1&query=Antártida+Argentina+3955,+Neuquén+Capital" className="flex items-center">
@@ -25,48 +25,46 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">Resources</h2>
-              <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="https://flowbite.com" className="hover:underline">
-                    Flowbite
+          <div className="">
+            <h2 className='uppercase text-white mb-8'>Enlaces</h2>
+            <div className='grid grid-cols-2 gap-8 sm:gap-6 '>
+              <ul className="flex flex-col gap-4 text-gray-400">
+                <li className="flex items-center gap-2">
+                  <div className='size-2 bg-red-500 rounded-full'></div>
+                  <a href="" className="hover:underline">
+                    Colegio
                   </a>
                 </li>
-                <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">
-                    Tailwind CSS
+                <li className="flex items-center gap-2">
+                  <div className='size-2 bg-isei-blue rounded-full'></div>
+                  <a href="" className="hover:underline">
+                    Isei
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className='size-2 bg-orange-500 rounded-full'></div>
+                  <a href="" className="hover:underline">
+                    Deporte
                   </a>
                 </li>
               </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">Follow us</h2>
-              <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="https://github.com/themesberg/flowbite" className="hover:underline">
-                    Github
-                  </a>
-                </li>
-                <li>
+              <ul className="flex flex-col gap-4 text-gray-400">
+                <li className="flex items-center gap-2">
+                  <div className='size-2 bg-sky-500 rounded-full'></div>
                   <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
-                    Discord
+                    Comunicación
                   </a>
                 </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
-              <ul className="text-gray-400">
-                <li className="mb-4">
+                <li className="flex items-center gap-2">
+                  <div className='size-2 bg-yellow-500 rounded-full'></div>
                   <a href="#" className="hover:underline">
-                    Privacy Policy
+                    Comunidad
                   </a>
                 </li>
-                <li>
+                <li className="flex items-center gap-2">
+                  <div className='size-2 bg-purple-500 rounded-full'></div>
                   <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
+                    Mediacion
                   </a>
                 </li>
               </ul>
@@ -75,11 +73,10 @@ export const Footer = () => {
         </div>
         <div className="sm:flex sm:items-center sm:justify-between mt-16">
           <span className="text-sm text-gray-500 sm:text-center">
-            © 2022{' '}
-            <a href="https://flowbite.com" className="hover:underline">
-              Flowbite™
+            © 2025{' '}
+            <a href="/" className="hover:underline">
+              Fundacion Neuquen Oeste™
             </a>
-            . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="#" className="text-gray-500 hover:text-white">

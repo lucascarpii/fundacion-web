@@ -5,47 +5,48 @@ export const LatestArticles = () => {
   const articles = [
     {
       id: 1,
-      title: "Exploring Potential and Challenges in Global Agriculture.",
-      date: "October 23, 2023",
+      title: "Explorando el Potencial y los Retos de la Agricultura Global.",
+      date: "23 de octubre de 2023",
       description:
-        "Uncovering the Vast Potential and Complex Challenges in the World of Global Agriculture.",
+        "Descubriendo el Gran Potencial y los Complejos Retos en el Mundo de la Agricultura Global.",
     },
     {
       id: 2,
-      title: "Bringing Change in the Livestock Industry.",
-      date: "October 23, 2023",
+      title: "Generando Cambios en la Industria Ganadera.",
+      date: "23 de octubre de 2023",
       description:
-        "Revealing Innovations, Challenges and Transformation Potential that Bring Positive.",
+        "Revelando Innovaciones, Retos y el Potencial de Transformación que Generan Cambios Positivos.",
     },
     {
       id: 3,
-      title: "Potential and Constraints Faced in Production Quality.",
-      date: "October 23, 2023",
+      title: "Potencial y Limitaciones en la Calidad de Producción.",
+      date: "23 de octubre de 2023",
       description:
-        "Discusses Challenges and Opportunities in Achieving High Production Standards.",
+        "Discusión sobre los Retos y Oportunidades para Lograr Altos Estándares de Producción.",
     },
     {
       id: 4,
-      title: "Achieving High Productivity from Your Own Home Garden.",
-      date: "October 23, 2023",
+      title: "Cómo Lograr Alta Productividad en tu Propio Jardín en Casa.",
+      date: "23 de octubre de 2023",
       description:
-        "A Practical Guide to Achieving Satisfactory Results from Plants Grown In Your Home.",
+        "Una Guía Práctica para Lograr Resultados Satisfactorios con las Plantas Cultivadas en tu Hogar.",
     },
     {
       id: 5,
-      title: "The Best Guide to Planting Seeds with Optimal Results.",
-      date: "October 23, 2023",
+      title: "La Mejor Guía para Plantar Semillas con Resultados Óptimos.",
+      date: "23 de octubre de 2023",
       description:
-        "Effective Strategies and Techniques to Achieve Healthy and Productive Plant Growth.",
+        "Estrategias y Técnicas Efectivas para Lograr un Crecimiento Saludable y Productivo de las Plantas.",
     },
     {
       id: 6,
-      title: "Strategies for Caring for Your Garden More Efficiently and Productively.",
-      date: "October 23, 2023",
+      title: "Estrategias para Cuidar tu Jardín de Forma Más Eficiente y Productiva.",
+      date: "23 de octubre de 2023",
       description:
-        "An approach that improves plant performance and makes garden management easier.",
+        "Un Enfoque que Mejora el Rendimiento de las Plantas y Facilita la Gestión del Jardín.",
     },
   ];
+
 
   const articlesPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
@@ -83,7 +84,7 @@ export const LatestArticles = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20">
-      <h2 className="text-4xl mb-6">Latest Articles</h2>
+      <h2 className="text-4xl mb-6">Últimas noticias</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {paginatedArticles.map((article) => (
           <div key={article.id} className="flex flex-col">
@@ -110,11 +111,10 @@ export const LatestArticles = () => {
           {getVisiblePages().map((page, index) => (
             <button
               key={index}
-              className={`size-8 text-sm font-medium rounded-full ${
-                currentPage === page
+              className={`size-8 text-sm font-medium rounded-full ${currentPage === page
                   ? "bg-lime-300"
                   : "hover:bg-gray-200"
-              }`}
+                }`}
               onClick={() => handlePageClick(page)}
             >
               {page}
@@ -133,5 +133,5 @@ export const LatestArticles = () => {
       </div>
     </div>
   );
-  
+
 };

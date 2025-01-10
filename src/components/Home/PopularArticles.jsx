@@ -4,38 +4,39 @@ export const PopularArticles = () => {
   const articles = [
     {
       id: 1,
-      title: "Best Strategy to Achieve Profitable Harvest.",
-      date: "October 23, 2023",
+      title: "Mejor Estrategia para Lograr una Cosecha Rentable.",
+      date: "23 de octubre de 2023",
       description:
-        "Optimal strategies for achieving profitable harvests involve a comprehensive approach to farm management, selection of appropriate crop varieties, implementation of efficient practices.",
+        "Las estrategias óptimas para lograr cosechas rentables implican un enfoque integral en la gestión agrícola, la selección de variedades de cultivos adecuadas y la implementación de prácticas eficientes.",
       isMain: true,
     },
     {
       id: 2,
       title:
-        "Abundant Harvest from Agricultural Farm Land Shows Success.",
-      date: "October 23, 2023",
+        "Cosecha Abundante en Tierra Agrícola Muestra Éxito.",
+      date: "23 de octubre de 2023",
       isMain: false,
     },
     {
       id: 3,
       title:
-        "Latest Innovations Increasing Milk Production and Quality.",
-      date: "October 23, 2023",
+        "Últimas Innovaciones que Aumentan la Producción y Calidad de la Leche.",
+      date: "23 de octubre de 2023",
       isMain: false,
     },
     {
       id: 4,
       title:
-        "Best Practices in Harvesting Vegetables from Plantations.",
-      date: "October 23, 2023",
+        "Mejores Prácticas para Cosechar Verduras en Plantaciones.",
+      date: "23 de octubre de 2023",
       isMain: false,
     },
   ];
+  
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 py-20">
-      <h2 className="text-4xl mb-6">Popular Articles</h2>
+      <h2 className="text-4xl mb-6">Novedades</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Artículo principal */}
         {articles

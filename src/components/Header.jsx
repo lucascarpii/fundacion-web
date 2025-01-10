@@ -17,7 +17,7 @@ export function Header({ theme = 'dark' }) {
     { label: 'Comunicación', href: '/comunicacion' },
     { label: 'Comunidad', href: '/comunidad' },
     { label: 'Mediación', href: '/mediacion' },
-    { label: 'Kinesiologia', href: '/kinesiologia' },
+    { label: 'Sobre Nosotros', href: '/sobre_nosotros' },
   ];
 
   const menuVariants = {
@@ -78,7 +78,7 @@ export function Header({ theme = 'dark' }) {
           </ul>
 
           <button className={`w-32 tracking-widest hidden lg:block text-xs font-semibold uppercase border-2 hover:text-white hover:bg-isei-blue hover:border-transparent transition-all duration-200 ${buttonColor} pt-3 pb-[11px] px-3`}>
-            Me interesa
+            Contacto
           </button>
 
         </div>
@@ -112,7 +112,7 @@ export function Header({ theme = 'dark' }) {
 
         <div className={`px-6 pb-6 ${!isOpen && 'hidden'}`}>
           <button className={`w-full border-2 border-isei-blue text-isei-blue hover:bg-isei-blue hover:text-white transition-colors duration-200 shadow-md uppercase text-xs font-semibold pb-2.5 pt-3`}>
-            Me interesa
+            Contacto
           </button>
         </div>
       </motion.nav>
