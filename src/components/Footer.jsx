@@ -30,41 +30,41 @@ export const Footer = () => {
             <div className='grid grid-cols-2 gap-8 sm:gap-6 '>
               <ul className="flex flex-col gap-4 text-gray-400">
                 <li className="flex items-center gap-2">
-                  <div className='size-2 bg-red-500 rounded-full'></div>
-                  <a href="" className="hover:underline">
-                    Colegio
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className='size-2 bg-isei-blue rounded-full'></div>
-                  <a href="" className="hover:underline">
+                  <div className='w-0.5 h-full bg-isei-blue'></div>
+                  <a href="" className="hover:underline hover:text-white">
                     Isei
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className='size-2 bg-orange-500 rounded-full'></div>
-                  <a href="" className="hover:underline">
+                  <div className='w-0.5 h-full bg-red-500'></div>
+                  <a href="" className="hover:underline hover:text-white">
+                    Colegio
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className='w-0.5 h-full bg-orange-500'></div>
+                  <a href="" className="hover:underline hover:text-white">
                     Deporte
                   </a>
                 </li>
               </ul>
               <ul className="flex flex-col gap-4 text-gray-400">
                 <li className="flex items-center gap-2">
-                  <div className='size-2 bg-sky-500 rounded-full'></div>
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
-                    Comunicación
+                  <div className='w-0.5 h-full bg-purple-500'></div>
+                  <a href="#" className="hover:underline hover:text-white">
+                    Mediacion
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className='size-2 bg-yellow-500 rounded-full'></div>
-                  <a href="#" className="hover:underline">
+                  <div className='w-0.5 h-full bg-yellow-500'></div>
+                  <a href="#" className="hover:underline hover:text-white">
                     Comunidad
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className='size-2 bg-purple-500 rounded-full'></div>
-                  <a href="#" className="hover:underline">
-                    Mediacion
+                  <div className='w-0.5 h-full bg-sky-500'></div>
+                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline hover:text-white">
+                    Comunicación
                   </a>
                 </li>
               </ul>
@@ -74,7 +74,7 @@ export const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between mt-16">
           <span className="text-sm text-gray-500 sm:text-center">
             © 2025{' '}
-            <a href="/" className="hover:underline">
+            <a href="/" className="hover:underline hover:text-white">
               Fundacion Neuquen Oeste™
             </a>
           </span>

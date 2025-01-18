@@ -5,7 +5,7 @@ export function AreaItem({ src, alt, gradient }) {
   return (
     <motion.li
       className="relative group"
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.2 }}
       transition={{ duration: 0.3 }}
     >
       <div

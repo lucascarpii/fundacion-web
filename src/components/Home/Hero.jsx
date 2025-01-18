@@ -13,7 +13,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div id="overlay" className="bg-black/40 absolute inset-0"></div>
+      <div id="overlay" className="bg-isei-footer/60 absolute inset-0"></div>
       <section className="max-w-screen-xl flex justify-center items-center lg:items-start mx-auto flex-col text-center lg:text-start w-full z-40">
         <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-white">
           <motion.span
