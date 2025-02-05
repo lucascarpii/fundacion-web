@@ -29,9 +29,11 @@ export function Areas() {
         </rect>
       </svg>
       <div className='absolute w-full h-full bg-gradient-to-b from-white via-transparent to-white'></div>
-      <div className='max-w-screen-2xl mx-auto py-28 flex flex-col justify-between gap-28'>
-        <h2 className='text-center relative text-5xl font-light tracking-wide'>Explora nuestros <span className='bg-lime-500 text-white ms-1 px-3'> áreas de trabajo </span></h2>
-        <div className='flex flex-col gap-20 px-8'>
+      <div className='max-w-screen-2xl mx-auto py-28 flex flex-col justify-between gap-28 px-6'>
+        <h2 className='text-center relative text-4xl md:text-5xl font-light tracking-wide flex flex-col md:block items-center'>
+          Explora nuestros <span className='bg-lime-500 text-white ms-1 px-3 max-w-fit mt-2 scale-110'> áreas de trabajo </span>
+        </h2>
+        <div className='hidden md:flex flex-col gap-20 px-8'>
           <ul className="grid grid-cols-3 place-items-center">
             {areas.slice(0, 3).map((area, index) => (
               <AreaItem key={index} src={area.src} alt={area.alt} gradient={area.gradient} />
@@ -43,6 +45,11 @@ export function Areas() {
             ))}
           </ul>
         </div>
+        <ul className='md:hidden px-8 grid grid-cols-2 gap-16 place-items-center'>
+          {areas.map((area, index) => (
+            <AreaItem key={index} src={area.src} alt={area.alt} gradient={area.gradient} />
+          ))}
+        </ul>
       </div>
     </section>
   );
