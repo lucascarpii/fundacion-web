@@ -14,8 +14,8 @@ export function Hero() {
       </div>
 
       <div id="overlay" className="bg-isei-footer/60 absolute inset-0"></div>
-      <section className="max-w-screen-xl flex justify-center items-center lg:items-start mx-auto flex-col text-center lg:text-start w-full z-40">
-        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-white">
+      <section className="max-w-screen-xl flex justify-center items-center lg:items-start mx-auto text-center flex-col lg:text-start w-full z-40">
+        <h1 className="text-4xl scale-110 sm:text-6xl md:text-7xl lg:scale-100 lg:text-8xl font-light text-white">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -48,21 +48,6 @@ export function Hero() {
             y el <span className="font-medium text-sky-400">progreso</span>
           </motion.span>
         </h1>
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex items-center bg-white rounded-full p-1 mt-10">
-          <SearchIcon className="size-5 ms-3 me-2 text-gray-400" />
-          <input
-            type="text"
-            className="h-full w-[300px] px-3 py-2 text-gray-700 focus:outline-none"
-            placeholder="Buscar..."
-          />
-          <button className="bg-[#d0f249] text-black flex text-sm font-medium gap-2 ps-3 items-center rounded-full p-1.5">
-            Search <span className="bg-black text-white rounded-full p-0.5"> <ArrowRightIcon /></span>
-          </button>
-        </motion.div> */}
       </section>
     </main>
   )
