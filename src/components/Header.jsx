@@ -39,7 +39,7 @@ export function Header({ theme = 'dark' }) {
   return (
     <>
       <nav className="absolute inset-0 z-20 h-fit">
-        <div className={`flex items-center justify-between h-[90px] overflow-hidden max-w-screen-xl mx-auto px-10 2xl:px-0 ${textColor}`}>
+        <div className={`flex items-center justify-between h-[90px] overflow-hidden max-w-screen-xl mx-auto px-6 2xl:px-0 ${textColor}`}>
           <a href="/">
             <img className="w-16 object-cover" src={logoSrc} alt="Logo" />
           </a>
@@ -89,7 +89,7 @@ export function Header({ theme = 'dark' }) {
         variants={menuVariants}
         className={`lg:hidden fixed top-0 z-50 flex flex-col w-full right-0 bg-white ${isOpen ? 'h-dvh' : 'h-[0px] transition-all  delay-500'}`}
       >
-        <div className='flex items-center justify-between min-h-[90px] px-10'>
+        <div className='flex items-center justify-between min-h-[90px] px-6'>
           <img className="w-16 object-cover" src="fundacion_logo.png" alt="Logo" />
           <MenuButton
             isOpen={isOpen}
