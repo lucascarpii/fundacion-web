@@ -25,7 +25,7 @@ export function Hero() {
       </svg>
       <div className='absolute w-full h-full lg:bg-hero-radial-gradient'></div>
 
-      <div className='max-w-2xl lg:max-w-screen-xl mx-auto pt-24 pb-20 lg:py-28 flex flex-col justify-center lg:grid px-6 lg:px-0 lg:grid-cols-5 min-h-dvh gap-4 xl:gap-10'>
+      <div className='max-w-2xl lg:max-w-screen-xl mx-auto pt-24 pb-20 lg:py-28 flex flex-col justify-center lg:grid px-6 sm:px-8 xl:px-0 lg:grid-cols-5 min-h-dvh gap-4 xl:gap-10'>
         <div className="h-fit lg:h-full flex flex-col justify-center z-10 col-span-1 lg:col-span-3 gap-8 lg:gap-10">
           <h1 className="text-5xl sm:text-7xl lg:text-7xl xl:text-8xl flex flex-col font-light text-title-black">
             <span>

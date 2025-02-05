@@ -17,11 +17,11 @@ export function Areas() {
       <svg className="w-full absolute h-full opacity-20 text-base-400/70" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern
-            height="78"
+            height="95"
             id="grid-pattern"
             patternUnits="userSpaceOnUse"
-            width="78">
-            <path d="M 78 0 L 0 0 0 78" stroke="currentColor" fill="none" strokeWidth="1">
+            width="95">
+            <path d="M 95 0 L 0 0 0 95" stroke="currentColor" fill="none" strokeWidth="1">
             </path>
           </pattern>
         </defs>
@@ -31,7 +31,7 @@ export function Areas() {
       <div className='absolute w-full h-full bg-gradient-to-b from-white via-transparent to-white'></div>
       <div className='max-w-screen-2xl mx-auto py-28 flex flex-col justify-between gap-28 px-6'>
         <h2 className='text-center relative text-4xl md:text-5xl font-light tracking-wide flex flex-col md:block items-center'>
-          Explora nuestros <span className='bg-lime-500 text-white ms-1 px-3 max-w-fit mt-2 scale-110'> áreas de trabajo </span>
+          Explora nuestros <span className='bg-[#84cc16] text-white ms-1 px-3 max-w-fit mt-2 scale-110'> áreas de trabajo </span>
         </h2>
         <div className='hidden md:flex flex-col gap-20 px-8'>
           <ul className="grid grid-cols-3 place-items-center">
