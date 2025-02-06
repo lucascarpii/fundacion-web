@@ -5,7 +5,7 @@ import { MapPinIcon } from '../icons/MapPinIcon';
 
 export const Footer = () => {
   return (
-    <footer className="p-4 bg-gradient-to-tl from-isei-footer to-isei-nav sm:py-12">
+    <footer className="p-4 bg-transparent relative border-t border-white/10 z-40 sm:py-12">
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -28,7 +28,7 @@ export const Footer = () => {
           <div className="">
             <h2 className='uppercase text-white mb-8'>Enlaces</h2>
             <div className='grid grid-cols-2 gap-8 sm:gap-6 '>
-              <ul className="flex flex-col gap-4 text-gray-400">
+              <ul className="flex flex-col gap-4 text-gray-300">
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-isei-blue'></div>
                   <a href="" className="hover:underline hover:text-white">
@@ -48,7 +48,7 @@ export const Footer = () => {
                   </a>
                 </li>
               </ul>
-              <ul className="flex flex-col gap-4 text-gray-400">
+              <ul className="flex flex-col gap-4 text-gray-300">
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-purple-500'></div>
                   <a href="#" className="hover:underline hover:text-white">
@@ -72,14 +72,14 @@ export const Footer = () => {
           </div>
         </div>
         <div className="sm:flex sm:items-center sm:justify-between mt-16">
-          <span className="text-sm text-gray-500 sm:text-center">
+          <span className="text-sm text-gray-400 sm:text-center">
             © 2025{' '}
             <a href="/" className="hover:underline hover:text-white">
               Fundacion Neuquen Oeste™
             </a>
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="#" className="text-gray-500 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-white">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -88,7 +88,7 @@ export const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-gray-500 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-white">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"

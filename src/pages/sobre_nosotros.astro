@@ -4,11 +4,17 @@ import Layout from "../layouts/Layout.astro";
 import { Hero } from "../components/About/Hero";
 import { History } from "../components/About/History";
 import { Pilares } from "../components/About/Pilares";
+import { Valores } from "../components/About/Valores";
+import { Footer } from "../components/Footer";
 ---
 
 <Layout>
   <Header theme="light" client:visible />
   <Hero client:visible />
   <History client:visible />
-  <Pilares client:visible />
+  <div class="bg-isei-footer overflow-hidden">
+    <Pilares client:visible />
+    <Valores client:visible />
+    <Footer client:visible />
+  </div>
 </Layout>

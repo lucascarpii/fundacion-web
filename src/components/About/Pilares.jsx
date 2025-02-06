@@ -1,14 +1,14 @@
 
 export const Pilares = () => {
   return (
-    <section className="bg-gradient-to-br relative from-[#0d0e17] min-h-dvh overflow-hidden to-zinc-900  text-white pt-32 pb-20">
+    <section className="relative min-h-dvh text-white pt-32 pb-20">
       <div className="w-2/12 aspect-square rounded-full bg-[#d0f502]/40 absolute top-44 right-32 blur-[150px]"></div>
       <div className="w-4/12 aspect-square rounded-full bg-indigo-600 absolute top-[30rem] right-[20rem] blur-[300px]"></div>
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0 grid grid-cols-2">
-        <h2 className="text-6xl/tight max-w-lg mt-6 bg-gradient-to-br from-white from-50% h-fit to-white/40 inline-block text-transparent bg-clip-text">
-          <span className="text-[#d0f500]">Principios</span> que guían la fundación
+        <h2 className="text-6xl/tight max-w-lg mt-6 bg-gradient-to-br from-white from-40% h-fit to-white/40 inline-block text-transparent bg-clip-text">
+          Los <span className="text-[#d0f500]">Principios</span> que nos definen
         </h2>
-        
+
         <div className="flex flex-col gap-10 w-full relative z-20">
           <article className="max-w-xl">
             <h3 className="text-white/50 uppercase text-lg font-medium mb-2">Visión</h3>
@@ -33,7 +33,7 @@ export const Pilares = () => {
             </div>
           </article>
         </div>
-        
+
       </div>
 
     </section>
