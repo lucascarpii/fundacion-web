@@ -13,6 +13,9 @@ export default {
 			},
 			backgroundImage: {
 				'hero-image': "url('/hero-image.webp')",
+				'accompany': "url('/acompañar.jpg')",
+				'igualdad': "url('/igualdad.jpg')",
+				'compasion': "url('/compasion.jpg')",
 				'radial-gradient': 'radial-gradient(circle, white, transparent)',
 				'hero-radial-gradient': 'radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(255,255,255,1) 80%)',
 			},
