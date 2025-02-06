@@ -5,38 +5,32 @@ export function Valores() {
     {
       nombre: "Acompañamiento",
       descripcion: "Brindamos apoyo constante en cada etapa del camino, asegurando que nadie se sienta solo en su crecimiento.",
-      icon: <MailIcon className="size-20" />,
-      color: "bg-[#242e8a]",
+      color: "bg-accompany bg-cover",
     },
     {
       nombre: "Respeto",
       descripcion: "Valoramos la diversidad y fomentamos un ambiente donde todas las opiniones y perspectivas son apreciadas.",
-      icon: <MailIcon className="size-20" />,
-      color: "bg-[#242e8a]",
+      color: "bg-gradient-to-b from-zinc-800/50 to-black/80",
     },
     {
       nombre: "Compasión",
       descripcion: "Nos preocupamos genuinamente por el bienestar de los demás, actuando siempre con sensibilidad y humanidad.",
-      icon: <MailIcon className="size-20" />,
-      color: "bg-[#242e8a]",
+      color: "bg-compasion bg-cover",
     },
     {
       nombre: "Empatía",
       descripcion: "Buscamos comprender y compartir los sentimientos de los demás, fortaleciendo lazos de confianza.",
-      icon: <MailIcon className="size-20" />,
-      color: "bg-[#242e8a]",
+      color: "bg-gradient-to-b from-zinc-800/50 to-black/80",
     },
     {
       nombre: "Igualdad",
       descripcion: "Promovemos un entorno en el que todos tengan las mismas oportunidades de desarrollo y éxito.",
-      icon: <MailIcon className="size-20" />,
-      color: "bg-[#242e8a]",
+      color: "bg-igualdad bg-cover",
     },
     {
       nombre: "Solidaridad",
       descripcion: "Fomentamos la colaboración y el apoyo mutuo para construir una comunidad fuerte y unida.",
-      icon: <MailIcon className="size-20" />,
-      color: "bg-[#242e8a]",
+      color: "bg-gradient-to-b from-zinc-800/50 to-black/80",
     }
   ]
   return (
@@ -49,13 +43,18 @@ export function Valores() {
         </p>
         <div className="grid grid-cols-3 grid-rows-2 gap-2 mt-20 max-w-screen-xl mx-auto w-full">
           {valores.map((valor, index) => (
-            <div className="bg-zinc-800/50 relative p-10 rounded-3xl overflow-hidden">
-              <div className="absolute -top-24 -right-24 w-40 aspect-square rounded-full bg-sky-200 blur-[100px]"></div>
-              <div className={`absolute -bottom-32 -right-0 w-56 aspect-square rounded-full ${valor.color} blur-[60px]`}></div>
+            <div className={`${valor.color} relative p-10 rounded-3xl overflow-hidden`}>
+              {valor.color === "bg-gradient-to-b from-zinc-800/50 to-black/80" ?
+                <>
+                  <div className="absolute -top-24 -right-24 w-40 aspect-square rounded-full bg-sky-200 blur-[100px]"></div>
+                  {/* <div className={`absolute -bottom-32 -right-0 w-56 aspect-square rounded-full bg-[#242e8a] blur-[60px]`}></div> */}
+                </>
+                :
+                <div className="absolute inset-0 w-full bg-gradient-to-t from-black/80 to-black/10"></div>
+              }
               <div className="relative z-10 flex flex-col justify-between h-full gap-10">
-                {/* {valor.icon} */}
                 <div className="flex flex-col justify-end gap-10">
-                  <h3 className="text-3xl font-medium">{valor.nombre}</h3>
+                  <h3 className="text-4xl font-medium bg-gradient-to-br from-white from-40% h-fit to-white/40 inline-block text-transparent bg-clip-text">{valor.nombre}</h3>
                   <p className="text-lg">
                     {valor.descripcion}
                   </p>
