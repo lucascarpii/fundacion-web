@@ -5,11 +5,11 @@ import { MapPinIcon } from '../icons/MapPinIcon';
 
 export const Footer = () => {
   return (
-    <footer className="p-4 bg-transparent relative border-t border-white/10 z-40 sm:py-12">
+    <footer className="px-6 py-10 bg-transparent relative border-t border-white/10 z-40 sm:py-12">
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com" className="flex gap-1 items-center">
+            <a href="/" className="flex gap-1 items-center">
               <img src="logo_blanco.png" className="mr-3 h-8" alt="FlowBite Logo" />
               <span className="self-center text-white text-xl font-semibold whitespace-nowrap">Fundación Neuquen Oeste</span>
             </a>

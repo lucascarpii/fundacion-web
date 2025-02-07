@@ -61,7 +61,7 @@ export const PopularArticles = () => {
                 <div className="bg-gray-300 w-full aspect-[4/3] mr-4"></div>
                 <div className="flex relative flex-col justify-center">
                   <p className="text-sm absolute top-0 text-gray-500">{article.date}</p>
-                  <h4 className="text-2xl font-medium">{article.title}</h4>
+                  <h4 className="text-sm lg:text-2xl font-medium">{article.title}</h4>
                 </div>
               </div>
             ))}
