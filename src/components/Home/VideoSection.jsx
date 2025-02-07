@@ -20,7 +20,7 @@ export function VideoSection() {
             <div className="relative rounded-2xl h-full bg-gradient-to-br from-blue-400 after:absolute after:bg-gray-100/30 after:inset-[1px] after:rounded-[calc(1rem-1px)]  via-gray-300/70   to-blue-400 via-40%">
               <iframe
                 className="w-full relative aspect-video rounded-2xl z-10 p-2"
-                src="30aniversario.mp4"
+                src="/30aniversario.mp4"
                 title="Video Fundación Neuquén Oeste"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

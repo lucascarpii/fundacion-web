@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex gap-1 items-center">
-              <img src="logo_blanco.png" className="mr-3 h-8" alt="FlowBite Logo" />
+              <img src="/logo_blanco.png" className="mr-3 h-8" alt="Logo" />
               <span className="self-center text-white text-xl font-semibold whitespace-nowrap">Fundación Neuquen Oeste</span>
             </a>
             <div className="flex flex-col gap-3 mt-6 text-gray-400">
