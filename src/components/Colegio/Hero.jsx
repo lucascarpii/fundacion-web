@@ -4,10 +4,10 @@ export function Hero() {
   return (
     <section className="min-h-[60dvh] flex items-center justify-center relative">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <svg className="w-full -mt-2 absolute h-full opacity-20 text-base-400/70 [mask-image:radial-gradient(50rem_80rem_at_top,white,transparent)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full -mt-2 absolute h-full opacity-20 text-base-400/70 [mask-image:radial-gradient(50rem_50rem_at_top,white,transparent)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern height="200" id="grid-pattern" patternUnits="userSpaceOnUse" width="200">
-              <path d="M 200 0 L 0 0 0 200" stroke="currentColor" fill="none" strokeWidth="1"></path>
+            <pattern height="150" id="grid-pattern" patternUnits="userSpaceOnUse" width="150">
+              <path d="M 150 0 L 0 0 0 150" stroke="currentColor" fill="none" strokeWidth="1"></path>
             </pattern>
           </defs>
           <rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
