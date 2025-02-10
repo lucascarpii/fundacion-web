@@ -21,7 +21,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
-            Cultivamos comunidad
+            Transformamos
           </motion.span>
           <br />
           <motion.span
@@ -29,7 +29,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            sembrando <span className="font-medium text-sky-400">consciencia</span>
+            desde el <span className="font-medium text-sky-400">servicio</span>
           </motion.span>
           <br />
           <motion.span
@@ -39,7 +39,7 @@ export function Hero() {
             className="relative"
           >
             <span className="relative z-20">
-              en cada paso
+              Cultivando comunidad
             </span>
             <svg
               className="absolute -bottom-1 right-0"

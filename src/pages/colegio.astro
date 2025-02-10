@@ -3,11 +3,17 @@ import { Header } from "../components/Header";
 import { Hero } from "../components/Colegio/Hero";
 import { Footer } from "../components/Footer";
 import Layout from "../layouts/Layout.astro";
+import { NivelPrimario } from "../components/Colegio/NivelPrimario";
+import { NivelSecundario } from "../components/Colegio/NivelSecundario";
+import { SecundarioAdultos } from "../components/Colegio/SecundarioAdultos";
 ---
 
 <Layout>
   <Header theme="light" client:visible />
   <Hero client:visible />
+  <NivelPrimario client:visible />
+  <NivelSecundario client:visible />
+  <SecundarioAdultos client:visible />
   <div class="bg-isei-footer relative overflow-hidden">
     <div
       class="w-80 lg:w-4/12 aspect-square rounded-full bg-[#3753b0] absolute lg:-top-[30rem] lg:left-[12rem] blur-[150px] lg:blur-[250px]"
