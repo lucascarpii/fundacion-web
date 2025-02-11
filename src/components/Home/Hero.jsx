@@ -7,9 +7,9 @@ export function Hero() {
     <main className="w-full min-h-dvh bg-hero-image bg-no-repeat bg-cover bg-center flex items-center relative px-5 lg:px-20 lg:pt-10">
       <div className="absolute w-full left-0 bottom-8 flex justify-center z-10">
         <div className="max-w-screen-xl mx-auto w-full flex justify-end px-6">
-          <button id="explore" className="flex items-center gap-2 tracking-wide font-light text-white">
-            Explorar más <span className="bg-white text-black rounded-full p-1 rotate-90"> <ArrowRightIcon /></span>
-          </button>
+          <a href="#areas" className="flex cursor-pointer items-center gap-2 tracking-wide font-light text-white">
+            Explorar más <span className="bg-white text-black rounded-full p-1 rotate-90"> <ArrowRightIcon className="size-5" /></span>
+          </a>
         </div>
       </div>
 

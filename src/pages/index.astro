@@ -6,16 +6,23 @@ import { LatestArticles } from "../components/Home/LatestArticles";
 import { PopularArticles } from "../components/Home/PopularArticles";
 import { Footer } from "../components/Footer";
 import Layout from "../layouts/Layout.astro";
+import { Banner } from "../components/Home/Banner";
 ---
 
 <Layout>
   <Header client:visible />
   <Hero client:visible />
-  <Areas client:visible />
+  <div id="areas">
+    <Banner />
+    <Areas client:visible />
+  </div>
   <PopularArticles client:visible />
   <LatestArticles client:visible />
   <div class="bg-isei-footer relative overflow-hidden">
-    <div class="w-80 lg:w-4/12 aspect-square rounded-full bg-[#3753b0] absolute lg:-top-[30rem] lg:left-[12rem]  blur-[150px] lg:blur-[250px]"></div>
+    <div
+      class="w-80 lg:w-4/12 aspect-square rounded-full bg-[#3753b0] absolute lg:-top-[30rem] lg:left-[12rem] blur-[150px] lg:blur-[250px]"
+    >
+    </div>
     <Footer client:visible />
   </div>
 </Layout>
