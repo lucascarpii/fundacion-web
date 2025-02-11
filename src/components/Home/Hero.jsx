@@ -29,7 +29,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            desde el <span className="font-medium text-sky-400">servicio</span>
+            desde el <span className="font-medium text-sky-400">servicio</span>,
           </motion.span>
           <br />
           <motion.span
@@ -39,7 +39,7 @@ export function Hero() {
             className="relative"
           >
             <span className="relative z-20">
-              Cultivando comunidad
+              cultivando comunidad
             </span>
             <svg
               className="absolute -bottom-1 right-0"
