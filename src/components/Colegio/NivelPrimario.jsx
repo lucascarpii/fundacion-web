@@ -39,9 +39,9 @@ export function NivelPrimario() {
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-10 space-x-3">
-              <div className="flex items-center divide-x divide-zinc-500">
-                <cite className="pr-3 font-medium text-white">Fondevila Patricia</cite>
-                <cite className="pl-3 text-sm text-zinc-200">Directora de nivel inicial y primario</cite>
+              <div className="flex flex-col md:flex-row items-center md:divide-x divide-zinc-500">
+                <cite className="md:pr-3 font-medium text-white">Fondevila Patricia</cite>
+                <cite className="md:pl-3 text-sm text-white/60">Directora de nivel inicial y primario</cite>
               </div>
             </figcaption>
           </figure>

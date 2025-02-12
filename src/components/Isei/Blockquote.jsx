@@ -37,9 +37,9 @@ export function Blockquote() {
           </blockquote>
           <figcaption className="flex items-center justify-center mt-10 space-x-3">
             <img className="size-8 rounded-full" src="https://www.fundacionkonex.org/custom/web/data/imagenes/repositorio/2010/6/1/979/20160316110438d736bb10d83a904aefc1d6ce93dc54b8.jpg" alt="Jose Luis Lozano" />
-            <div className="flex items-center divide-x divide-zinc-500">
-              <cite className="pr-3 font-medium text-zinc-200">José Luis Lozano.</cite>
-              <cite className="pl-3 text-sm text-zinc-400">Rector</cite>
+            <div className="flex flex-col md:flex-row items-center md:divide-x divide-zinc-500">
+              <cite className="md:pr-3 font-medium text-zinc-200">José Luis Lozano.</cite>
+              <cite className="md:pl-3 text-sm text-white/60">Rector</cite>
             </div>
           </figcaption>
         </figure>
