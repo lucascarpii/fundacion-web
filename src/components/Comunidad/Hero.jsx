@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-
 import { MailIcon } from "../../icons/MailIcon";
 
 export function Hero() {
@@ -29,7 +28,7 @@ export function Hero() {
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
               construimos
             </motion.span>
@@ -37,12 +36,16 @@ export function Hero() {
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
             >
               un <span className="font-normal bg-gradient-to-br from-comunidad from-50% to-yellow-600 text-transparent bg-clip-text">lugar mejor</span>
             </motion.span>
           </h1>
-          <img src="/comunidad_logo_enca.png" className='h-28 lg:h-40 px-6' alt="" />
+          <motion.img
+            initial={{ opacity: 0, y: 30, scale: 0.6 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 1, delay: 0, ease: 'easeInOut' }}
+            src="/comunidad_logo_enca.png" className='h-28 lg:h-40 px-6' alt="" />
         </div>
         <div className="grid lg:grid-cols-2 mb-24 gap-6 lg:gap-20 place-items-center">
           <div className="max-w-2xl text-lg/7 text-gray-700">
