@@ -15,16 +15,16 @@ export function Hero() {
           <rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
         </svg>
       </div>
-      <div className='w-full max-w-2xl lg:max-w-screen-lg py-32 mx-auto px-6 min-h-[80vh] md:min-h-[75vh] flex flex-col-reverse lg:grid lg:grid-cols-3 gap-10 lg:gap-6'>
+      <div className='w-full max-w-2xl lg:max-w-screen-lg py-32 mx-auto px-6 md:min-h-[70vh] flex flex-col-reverse lg:flex-row gap-10 lg:gap-8'>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0, ease: 'easeInOut' }}
-          className='p-1.5 bg-gradient-to-br from-mediacion to-mediacion/30 h-fit lg:my-auto'>
-          <img src="/enca_mediacion.jpg" className='lg:aspect-[4/3] w-full object-cover shadow-xl' alt="" />
+          className='p-1.5 bg-gradient-to-br from-mediacion to-mediacion/30 xl:-ms-20 h-fit lg:my-auto'>
+          <img src="/enca_mediacion.jpg" className='lg:aspect-[4/3] lg:w-96 object-cover shadow-xl' alt="" />
         </motion.div>
         <div className='flex flex-col items-center md:items-start gap-6 lg:col-span-2 justify-center'>
-          <h1 className="text-5xl md:text-6xl text-center md:text-start lg:text-[70px] xl:text-[80px] font-light text-black">
+          <h1 className="text-5xl md:text-6xl text-center md:text-start lg:text-[65px] xl:text-[80px] font-light text-black">
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
