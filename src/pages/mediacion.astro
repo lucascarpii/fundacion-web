@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Header } from "../components/Header";
+import { Hero } from "../components/Mediacion/Hero";
+import { Blockquote } from "../components/Mediacion/Blockquote";
+import { Footer } from "../components/Footer";
+import { Info } from "../components/Mediacion/Info"
+import { Logos } from "../components/Mediacion/Logos"
+
+---
+
+<Layout>
+  <Header theme="light" client:visible />
+  <Hero client:visible />
+  <Logos client:visible />
+  <Info />
+  <Blockquote client:visible />
+  <div class="bg-isei-footer relative overflow-hidden">
+    <div
+      class="w-80 lg:w-4/12 aspect-square rounded-full bg-[#3753b0] absolute lg:-top-[30rem] lg:left-[12rem] blur-[150px] lg:blur-[250px]"
+    >
+    </div>
+    <Footer client:visible />
+  </div>
+</Layout>

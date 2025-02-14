@@ -2,13 +2,12 @@ import React from 'react';
 import { AreaItem } from './AreaItem';
 
 const areas = [
-  { src: "/index_logo_colegio.png", alt: "Colegio", gradient: "from-red-400 to-red-500" },
-  // { src: "/index_logo_kinesiologia.png", alt: "Kinesiología", gradient: "from-[#57c23c] to-[#57c23c]" },
-  { src: "/index_logo_isei.png", alt: "ISEI", gradient: "from-isei-teal to-isei-teal" },
-  { src: "/index_logo_deporte.png", alt: "Deporte", gradient: "from-orange-400 to-orange-500" },
-  { src: "/index_logo_comunicacion.png", alt: "Comunicación", gradient: "from-sky-400 to-sky-500" },
-  { src: "/index_logo_comunidad.png", alt: "Comunidad", gradient: "from-yellow-400 to-yellow-500" },
-  { src: "/index_logo_mediacion.png", alt: "Mediación", gradient: "from-purple-400 to-purple-500" },
+  { src: "colegio", image: "/index_logo_colegio.png", alt: "Colegio", gradient: "from-red-400 to-red-500" },
+  { src: "isei", image: "/index_logo_isei.png", alt: "ISEI", gradient: "from-isei-teal to-isei-teal" },
+  { src: "deporte", image: "/index_logo_deporte.png", alt: "Deporte", gradient: "from-orange-400 to-orange-500" },
+  { src: "comunicacion", image: "/index_logo_comunicacion.png", alt: "Comunicación", gradient: "from-sky-400 to-sky-500" },
+  { src: "comunidad", image: "/index_logo_comunidad.png", alt: "Comunidad", gradient: "from-yellow-400 to-yellow-500" },
+  { src: "mediacion", image: "/index_logo_mediacion.png", alt: "Mediación", gradient: "from-purple-400 to-purple-500" },
 ];
 
 export function Areas() {
@@ -36,18 +35,18 @@ export function Areas() {
         <div className='hidden md:flex flex-col gap-20 px-8'>
           <ul className="grid grid-cols-3 place-items-center">
             {areas.slice(0, 3).map((area, index) => (
-              <AreaItem key={index} src={area.src} alt={area.alt} gradient={area.gradient} />
+              <AreaItem key={index} src={area.src} image={area.image} alt={area.alt} gradient={area.gradient} />
             ))}
           </ul>
           <ul className="grid grid-cols-3 place-items-center max-w-screen-xl mx-auto w-full">
             {areas.slice(3).map((area, index) => (
-              <AreaItem key={index + 4} src={area.src} alt={area.alt} gradient={area.gradient} />
+              <AreaItem key={index + 4} src={area.src} image={area.image} alt={area.alt} gradient={area.gradient} />
             ))}
           </ul>
         </div>
         <ul className='md:hidden px-8 grid grid-cols-2 gap-16 place-items-center'>
           {areas.map((area, index) => (
-            <AreaItem key={index} src={area.src} alt={area.alt} gradient={area.gradient} />
+            <AreaItem key={index} src={area.src} image={area.image} alt={area.alt} gradient={area.gradient} />
           ))}
         </ul>
       </div>
