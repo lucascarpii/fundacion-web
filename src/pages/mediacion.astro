@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Mediacion/Hero";
+import { Hero2 } from "../components/Mediacion/Hero2";
 import { Blockquote } from "../components/Mediacion/Blockquote";
 import { Footer } from "../components/Footer";
 import { Info } from "../components/Mediacion/Info";
@@ -11,7 +12,8 @@ import { Videos } from "../components/Mediacion/Videos";
 
 <Layout>
   <Header theme="light" client:visible />
-  <Hero client:visible />
+  <!-- <Hero client:visible /> -->
+  <Hero2 client:visible />
   <Logos client:visible />
   <Info />
   <Videos />
