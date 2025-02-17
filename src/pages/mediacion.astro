@@ -1,21 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Header } from "../components/Header";
-import { Hero } from "../components/Mediacion/Hero";
 import { Hero2 } from "../components/Mediacion/Hero2";
 import { Blockquote } from "../components/Mediacion/Blockquote";
 import { Footer } from "../components/Footer";
-import { Info } from "../components/Mediacion/Info";
 import { Logos } from "../components/Mediacion/Logos";
 import { Videos } from "../components/Mediacion/Videos";
+import { CPREM } from "../components/Mediacion/CPREM";
 ---
 
 <Layout>
-  <Header theme="light" client:visible />
-  <!-- <Hero client:visible /> -->
+  <Header theme="dark" client:visible />
   <Hero2 client:visible />
   <Logos client:visible />
-  <Info />
+  <CPREM client:visible />
   <Videos />
   <Blockquote client:visible />
   <div class="bg-isei-footer relative overflow-hidden">

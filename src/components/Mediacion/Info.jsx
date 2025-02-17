@@ -9,9 +9,9 @@ export function Info() {
           de 9 a 13 hs
         </div>
       </div>
-      <div className="max-w-3xl text-lg text-gray-700 mt-6 lg:mt-0">
+      <div className="max-w-3xl text-lg/7 text-gray-700 mt-6 lg:mt-0">
         <p className="text-pretty">
-          Creamos el Centro de Mediación Comunitaria en la Fundación Neuquén Oeste a partir de la necesidad de solucionar las diferencias vecinales, escolares y familiares en el oeste de la ciudad con métodos participativos de resolución de conflictos.
+          Creamos el <strong>Centro de Mediación Comunitaria</strong> en la Fundación Neuquén Oeste a partir de la necesidad de solucionar las diferencias vecinales, escolares y familiares en el oeste de la ciudad con métodos participativos de resolución de conflictos.
         </p>
         <p className="mt-4 text-pretty">
           Se pretende que, a partir del diálogo, toda situación de conflicto entre dos personas o familias pueda ser resuelta y que se encuentre una solución en pos del bienestar de todos.

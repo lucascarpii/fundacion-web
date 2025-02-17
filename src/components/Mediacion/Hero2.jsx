@@ -3,12 +3,12 @@ import { DownloadIcon } from "../../icons/DownloadIcon"
 
 export function Hero2() {
   return (
-    <div className="">
+    <div className="bg-isei-footer pt-[90px] pb-10 overflow-hidden sm:px-6  lg:px-8">
       <div
-        className="mx-auto max-w-7xl py-[90px] sm:px-6 sm:py-32 lg:px-8"
+        className="mx-auto max-w-7xl"
       >
         <motion.div
-          className="relative isolate overflow-hidden bg-isei-footer px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 justify-between lg:pt-0"
+          className="relative isolate px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 justify-between lg:pt-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0 }}
@@ -77,7 +77,7 @@ export function Hero2() {
               src="/enca_mediacion.jpg"
               width={1824}
               height={1080}
-              className="w-full aspect-video lg:aspect-[5/3.5] object-cover max-w-lg rounded-t-xl lg:rounded-l-xl lg:rounded-none bg-white/5 ring-4 ring-white/10"
+              className="w-full aspect-video lg:aspect-[5/3.5] object-cover max-w-lg rounded-2xl bg-white/5 ring-4 ring-white/10"
             />
           </motion.div>
         </motion.div>

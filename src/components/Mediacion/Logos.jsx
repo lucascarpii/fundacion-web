@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 export function Logos() {
   return (
-    <div className="pb-24 sm:pb-32">
+    <div className="py-24 sm:py-32 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0 }}
