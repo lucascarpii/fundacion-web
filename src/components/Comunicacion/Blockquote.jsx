@@ -5,20 +5,20 @@ export function Blockquote() {
   return (
     <section className="pb-20 flex flex-col-reverse md:flex-col max-w-screen-xl mx-auto gap-2 px-4">
       <div className="mb-4 mt-8 md:mt-0">
-        <ul className="flex gap-6 items-center flex-col md:flex-row justify-between px-4">
-          {/* <li>
+        {/* <ul className="flex gap-6 items-center flex-col md:flex-row justify-between px-4">
+          <li>
             <a href="https://www.facebook.com/profile.php?id=100063630023391&eid=ARBJSzYAwm33gN1sidIoiD--_Zea6MwuMBUdwo2sl2XQG-EuOMsnqmo_LGSeNWjwnupgDLqjBKcvMUDN#" target="_blank" rel="noopener noreferrer" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-isei-blue transition-colors">
               <Facebook className="size-7" />
               <span className="text-lg md:text-base font-medium">Visítanos en Facebook</span>
             </a>
-          </li> */}
+          </li>
           <li>
             <a href="mailto:fundacionnqnoeste@gmail.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-comunicacion transition-colors">
               <MailIcon className="size-7" />
               <span className="text-lg md:text-base font-medium">fundacionnqnoeste@gmail.com</span>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <div className="bg-isei-footer rounded-xl px-4 py-6 md:py-8 lg:py-10 flex flex-col gap-4 relative overflow-hidden">
         <div className="absolute h-2/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>

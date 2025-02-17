@@ -34,14 +34,15 @@ export function Hero() {
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-24 -mt-10 relative">
-          <div className="lg:max-w-2xl text-lg/8  text-gray-700 relative z-20">
+          <div className="lg:max-w-2xl text-lg/8 text-gray-700 relative z-20">
             <p className="text-pretty">
-              A través de la utilización de nuestros equipos de radio, televisión y blogs se busca elaborar un mensaje de paz, amor y acompañamiento para dar sentido a la vida y transitarla con alegría. Esto nos motiva a seguir construyendo una comunidad ligada al positivismo y buenas relaciones para vivir mejor en sociedad.
+              A través de la utilización de nuestros equipos de radio, televisión y blogs se busca elaborar un mensaje de <strong>paz</strong>, <strong>amor</strong> y <strong>acompañamiento</strong> para dar sentido a la vida y transitarla con alegría. Esto nos motiva a seguir construyendo una comunidad ligada al <strong>positivismo</strong> y <strong>buenas relaciones</strong> para vivir mejor en sociedad.
             </p>
             <p className="mt-6 text-pretty">
-              El área de comunicación juega un rol fundamental para contar, desde la Fundación hacia el exterior, lo que allí dentro ocurre y los principios en los que se basa, poniendo primeramente el respeto y el amor hacia el otro, con un mensaje dirigido a todas las personas.
+              El área de comunicación juega un <strong>rol fundamental</strong> para contar, desde la Fundación hacia el exterior, lo que allí dentro ocurre y los <strong>principios</strong> en los que se basa, poniendo primeramente el <strong>respeto</strong> y el <strong>amor hacia el otro</strong>, con un mensaje dirigido a <strong>todas las personas</strong>.
             </p>
           </div>
+
 
           <div className="hidden lg:flex items-center justify-end  relative z-20">
             <img src="/enca_comunicacion.jpg" className='w-full aspect-video object-cover rounded-3xl rounded-br-none shadow-2xl' alt="" />

@@ -90,7 +90,9 @@ export function Header({ theme = 'dark' }) {
         className={`lg:hidden fixed top-0 z-50 flex flex-col w-full right-0 bg-white ${isOpen ? 'h-dvh' : 'h-[0px] transition-all  delay-500'}`}
       >
         <div className='flex items-center justify-between min-h-[90px] px-6'>
-          <img className="w-16 object-cover" src="fundacion_logo.png" alt="Logo" />
+          <a href="/">
+            <img className="w-16 object-cover" src={logoSrc} alt="Logo" />
+          </a>
           <MenuButton
             isOpen={isOpen}
             onClick={toggleMenu}
