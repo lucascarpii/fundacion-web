@@ -2,7 +2,7 @@ import { MailIcon } from "../../icons/MailIcon";
 
 export function CPREM() {
   return (
-    <div className="max-w-screen-xl mx-auto mb-24 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-screen-xl mx-auto my-24 px-4 sm:px-6 lg:px-8">
       <div className="lg:col-start-1 lg:grid lg:w-full lg:grid-cols-2 lg:gap-x-8">
 
         <h1 className="mt-2 col-span-2 mb-12 text-3xl text-center font-semibold tracking-tight text-gray-900">
