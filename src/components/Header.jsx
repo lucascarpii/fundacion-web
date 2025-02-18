@@ -17,7 +17,7 @@ export function Header({ theme = 'dark' }) {
     { label: 'Comunicación', href: '/comunicacion' },
     { label: 'Comunidad', href: '/comunidad' },
     { label: 'Mediación', href: '/mediacion' },
-    { label: 'Sobre Nosotros', href: '/sobre_nosotros' },
+    { label: 'Hidroponia', href: '/hidroponia' },
   ];
 
   const menuVariants = {
@@ -41,7 +41,7 @@ export function Header({ theme = 'dark' }) {
       <nav className="absolute inset-0 z-20 h-fit">
         <div className={`flex items-center justify-between h-[90px] overflow-hidden max-w-screen-xl mx-auto px-6 2xl:px-0 ${textColor}`}>
           <a href="/">
-            <img className="w-16 object-cover" src={logoSrc} alt="Logo" />
+            <img className="w-[70px] object-cover" src={logoSrc} alt="Logo" />
           </a>
 
           <MenuButton
@@ -77,9 +77,9 @@ export function Header({ theme = 'dark' }) {
             ))}
           </ul>
 
-          <button className={`w-32 tracking-widest hidden lg:block text-xs font-semibold uppercase border-2 hover:text-white hover:bg-isei-blue hover:border-transparent transition-all duration-200 ${buttonColor} pt-3 pb-[11px] px-3`}>
-            Contacto
-          </button>
+          <a href='/sobre_nosotros' className={`w-40 tracking-widest hidden lg:block text-xs font-semibold uppercase border-2 hover:text-white hover:bg-isei-blue hover:border-transparent transition-all duration-200 ${buttonColor} pt-3 pb-[11px] px-3`}>
+            Sobre nosotros
+          </a>
 
         </div>
       </nav>
@@ -87,11 +87,11 @@ export function Header({ theme = 'dark' }) {
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
-        className={`lg:hidden fixed top-0 z-50 flex flex-col w-full right-0 bg-white ${isOpen ? 'h-dvh' : 'h-[0px] transition-all  delay-500'}`}
+        className={`lg:hidden overflow-y-scroll fixed top-0 z-50 flex flex-col w-full right-0 bg-white ${isOpen ? 'h-dvh' : 'h-[0px] transition-all  delay-500'}`}
       >
         <div className='flex items-center justify-between min-h-[90px] px-6'>
           <a href="/">
-            <img className="w-16 object-cover" src={logoSrc} alt="Logo" />
+            <img className="w-[70px] object-cover" src={logoSrc} alt="Logo" />
           </a>
           <MenuButton
             isOpen={isOpen}
@@ -113,9 +113,12 @@ export function Header({ theme = 'dark' }) {
         </ul>
 
         <div className={`px-6 pb-6 ${!isOpen && 'hidden'}`}>
-          <button className={`w-full border-2 border-isei-blue text-isei-blue hover:bg-isei-blue hover:text-white transition-colors duration-200 shadow-md uppercase text-xs font-semibold pb-2.5 pt-3`}>
-            Contacto
-          </button>
+          <a href='/sobre_nosotros'>
+            <button className="w-full border-2 border-isei-blue text-isei-blue hover:bg-isei-blue hover:text-white transition-colors duration-200 shadow-md uppercase text-xs font-semibold pb-2.5 pt-3">
+
+              Sobre nosotros
+            </button>
+          </a>
         </div>
       </motion.nav>
     </>
