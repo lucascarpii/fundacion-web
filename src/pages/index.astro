@@ -12,8 +12,8 @@ import { Banner } from "../components/Home/Banner";
 <Layout>
   <Header client:visible />
   <Hero client:visible />
-  <div id="areas">
-    <Banner />
+  <div id="areas" class="relative">
+    <Banner client:load />
     <Areas client:visible />
   </div>
   <PopularArticles client:visible />
