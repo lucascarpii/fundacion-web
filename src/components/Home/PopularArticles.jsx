@@ -1,38 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { runCode } from "../hooks/useRunCode";
 
 export const PopularArticles = () => {
-  const articles = [
-    {
-      id: 1,
-      title: "Mejor Estrategia para Lograr una Cosecha Rentable.",
-      date: "23 de octubre de 2023",
-      description:
-        "Las estrategias óptimas para lograr cosechas rentables implican un enfoque integral en la gestión agrícola, la selección de variedades de cultivos adecuadas y la implementación de prácticas eficientes.",
-      isMain: true,
-    },
-    {
-      id: 2,
-      title:
-        "Cosecha Abundante en Tierra Agrícola Muestra Éxito.",
-      date: "23 de octubre de 2023",
-      isMain: false,
-    },
-    {
-      id: 3,
-      title:
-        "Últimas Innovaciones que Aumentan la Producción y Calidad de la Leche.",
-      date: "23 de octubre de 2023",
-      isMain: false,
-    },
-    {
-      id: 4,
-      title:
-        "Mejores Prácticas para Cosechar Verduras en Plantaciones.",
-      date: "23 de octubre de 2023",
-      isMain: false,
-    },
-  ];
-  
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      const response = await runCode('-st news -wr is_popular[1] -lt 4;');
+      const fetchedArticles = response.map((article) => ({
+        id: article.id,
+        title: article.title,
+        date: new Date(article.publish_date).toLocaleDateString("es-ES", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }),
+        description: article.short_description,
+        imageUrl: article.featured_image_url,
+        isMain: article.is_popular === "1",
+      }));
+      setArticles(fetchedArticles);
+    };
+
+    fetchArticles();
+  }, []);
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 py-20">
@@ -43,7 +34,10 @@ export const PopularArticles = () => {
           .filter((article) => article.isMain)
           .map((article) => (
             <div key={article.id} className="flex flex-col h-full">
-              <div className="bg-gray-300 aspect-[7/6] w-full mb-5"></div>
+              <div
+                className="bg-gray-300 aspect-[7/6] w-full mb-5"
+                style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
+              ></div>
               <p className="text-sm text-gray-500">{article.date}</p>
               <div className="mt-auto">
                 <h3 className="text-3xl mt-2">{article.title}</h3>
@@ -58,7 +52,10 @@ export const PopularArticles = () => {
             .filter((article) => !article.isMain)
             .map((article) => (
               <div key={article.id} className="grid gap-5 grid-cols-2">
-                <div className="bg-gray-300 w-full aspect-[4/3] mr-4"></div>
+                <div
+                  className="bg-gray-300 w-full aspect-[4/3] mr-4"
+                  style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                ></div>
                 <div className="flex relative flex-col justify-center">
                   <p className="text-sm absolute top-0 text-gray-500">{article.date}</p>
                   <h4 className="text-sm lg:text-2xl font-medium">{article.title}</h4>
