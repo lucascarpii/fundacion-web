@@ -3,7 +3,7 @@ import { DownloadIcon } from "../../icons/DownloadIcon"
 
 export function Hero2() {
   return (
-    <div className="bg-isei-footer pt-[90px] pb-10 overflow-hidden sm:px-6  lg:px-8">
+    <div className="bg-[#183950] pt-[90px] pb-10 overflow-hidden sm:px-6  lg:px-8">
       <div
         className="mx-auto max-w-7xl"
       >
@@ -21,11 +21,11 @@ export function Hero2() {
             aria-hidden="true"
             className="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
           >
-            <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+            <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.2" />
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                <stop stopColor="#7775D6" />
-                <stop offset={1} stopColor="#E935C1" />
+                <stop stopColor="#ffffff" />
+                <stop offset={1} stopColor="#ffffff" />
               </radialGradient>
             </defs>
           </motion.svg>
@@ -38,15 +38,7 @@ export function Hero2() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                Un <span className="font-normal bg-gradient-to-br from-mediacion from-50% to-mediacion/20 text-transparent bg-clip-text">mejor acuerdo</span>
-              </motion.span>
-              <br />
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
-                para todos
+                El diálogo <span className="font-normal bg-gradient-to-br from-mediacion from-50% to-mediacion/20 text-transparent bg-clip-text">pacifica</span>
               </motion.span>
             </h1>
             <motion.div

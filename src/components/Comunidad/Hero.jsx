@@ -22,7 +22,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0 }}
             >
-              Siempre juntos
+              Impulsando juntos 
             </motion.span>
             <br />
             <motion.span
@@ -30,7 +30,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              construimos
+              un presente
             </motion.span>
             <br />
             <motion.span
@@ -38,7 +38,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              un <span className="font-normal bg-gradient-to-br from-comunidad from-50% to-yellow-600 text-transparent bg-clip-text">lugar mejor</span>
+              con <span className="font-normal bg-gradient-to-br from-comunidad from-50% to-yellow-600 text-transparent bg-clip-text">consciencia</span>
             </motion.span>
           </h1>
           <motion.img

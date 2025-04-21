@@ -21,7 +21,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
-            Compatir experiencias
+            <span className="font-normal bg-gradient-to-br from-deporte from-50% to-orange-700 text-transparent bg-clip-text">Transformando comunidades</span>
           </motion.span>
           <br />
           <motion.span
@@ -29,20 +29,20 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="font-normal bg-gradient-to-br from-deporte from-50% to-orange-700 text-transparent bg-clip-text">creando equipo</span>
+            a través del deporte
           </motion.span>
         </h1>
         </div>
         <div className="grid lg:grid-cols-3 mb-24">
-          <div className="lg:max-w-3xl text-base lg:col-span-2 text-gray-700">
-            <p className="mt-6 text-pretty">
-              Diariamente se desarrollan diversas actividades deportivas con el objetivo de favorecer el crecimiento y fortalecer habilidades para la vida, como también el ejercicio del compañerismo y la vida sana en los niños y jóvenes.
+          <div className="lg:max-w-3xl text-lg lg:col-span-2 text-gray-700">
+            <p className="mt-4 text-pretty">
+              Diariamente se desarrollan diversas <strong>actividades deportivas</strong> con el objetivo de favorecer el crecimiento y fortalecer habilidades para la vida, como también el ejercicio del <strong>compañerismo y la vida sana</strong> en los niños y jóvenes.
             </p>
-            <p className="mt-6 text-pretty">
-              A través de un desarrollo integral y participativo, la práctica del deporte tiene un fuerte arraigo en las familias que concurren regularmente a la institución y motiva a las personas a ser más compañeros, trabajar en equipo y fortalecer los vínculos por medio de una competencia sana.
+            <p className="mt-4 text-pretty">
+              A través de un <strong>desarrollo integral y participativo</strong>, la práctica del deporte tiene un fuerte arraigo en las familias que concurren regularmente a la institución y motiva a las personas a ser más compañeros, trabajar en equipo y fortalecer los vínculos por medio de una competencia sana.
             </p>
-            <p className="mt-6 text-pretty">
-              El sueño de brindar contención a través del deporte, es hoy una realidad y podemos ver que la práctica del mismo asegura una vida plena de felicidad y amor.
+            <p className="mt-4 text-pretty">
+              El sueño de <strong>brindar contención</strong> a través del deporte, es hoy una realidad y podemos ver que la práctica del mismo asegura una vida plena de <strong>felicidad y amor</strong>.
             </p>
           </div>
 
