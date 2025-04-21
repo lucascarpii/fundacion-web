@@ -1,22 +1,49 @@
 import { Facebook } from "../../icons/Facebook";
 import { MailIcon } from "../../icons/MailIcon";
+import { Whatsapp } from "../../icons/Whatsapp";
 
 export function Blockquote() {
   return (
     <section className="pb-20 flex flex-col-reverse md:flex-col max-w-screen-xl mx-auto gap-2 px-4">
       <div className="mb-4 mt-8 md:mt-0">
-        <ul className="flex gap-6 items-center flex-col md:flex-row justify-between px-4">
+        <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100063630023391&eid=ARBJSzYAwm33gN1sidIoiD--_Zea6MwuMBUdwo2sl2XQG-EuOMsnqmo_LGSeNWjwnupgDLqjBKcvMUDN#" target="_blank" rel="noopener noreferrer" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-isei-blue transition-colors">
-              <Facebook className="size-7" />
-              <span className="text-lg md:text-base font-medium">Visítanos en Facebook</span>
+            <a className="w-full flex flex-col" href="https://wa.me/542996337712">
+              <div className='flex items-center border-l border-isei-blue text-black font-medium py-2 px-4 gap-2'>
+                <Whatsapp /> Futbol, voley, handball
+              </div>
+              <span className='border-l border-zinc-200 text-gray-500 p-4'>
+                +54 299 633-7712
+              </span>
             </a>
           </li>
           <li>
-            <a href="mailto:fundacionnqnoeste@gmail.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-deporte transition-colors">
-              <MailIcon className="size-7" />
-              <span className="text-lg md:text-base font-medium">fundacionnqnoeste@gmail.com</span>
+            <a className="w-full flex flex-col" href="https://wa.me/542994095694">
+              <div className='flex items-center border-l border-isei-blue text-black font-medium py-2 px-4 gap-2'>
+                <Whatsapp /> Judo
+              </div>
+              <span className='border-l border-zinc-200 text-gray-500 p-4'>
+                +54 299 409-5694
+              </span>
             </a>
+          </li>
+          <li>
+            <a className="w-full flex flex-col" href="https://wa.me/542996063754">
+              <div className='flex items-center border-l border-isei-blue text-black font-medium py-2 px-4 gap-2'>
+                <Whatsapp /> Taekwondo
+              </div>
+              <span className='border-l border-zinc-200 text-gray-500 p-4'>
+                +54 299 606-3754
+              </span>
+            </a>
+          </li>
+
+          <li className='w-full flex flex-col items-center justify-center'>
+            <div className='bg-blue-500 rounded-md text-white font-medium py-2 px-4 gap-4 flex items-center'>
+              <a className="flex items-center gap-1" href="https://www.facebook.com/profile.php?id=100063630023391&eid=ARBJSzYAwm33gN1sidIoiD--_Zea6MwuMBUdwo2sl2XQG-EuOMsnqmo_LGSeNWjwnupgDLqjBKcvMUDN#" target="_blank" >
+                <Facebook /> Visitanos en Facebook
+              </a>
+            </div>
           </li>
         </ul>
       </div>

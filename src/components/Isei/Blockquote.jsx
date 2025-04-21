@@ -1,10 +1,11 @@
 import { Facebook } from "../../icons/Facebook";
 import { MailIcon } from "../../icons/MailIcon";
+import { Whatsapp } from "../../icons/Whatsapp";
 
 export function Blockquote() {
   return (
     <section className="pb-20 flex flex-col-reverse md:flex-col max-w-screen-xl mx-auto gap-2 px-4">
-      <div className="mb-4 mt-8 md:mt-0">
+      {/* <div className="mb-4 mt-8 md:mt-0">
         <ul className="flex gap-6 items-center flex-col md:flex-row justify-between px-4">
           <li>
             <a href="https://www.facebook.com/ISEINQN/" target="_blank" rel="noopener noreferrer" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-isei-blue transition-colors">
@@ -19,6 +20,47 @@ export function Blockquote() {
             </a>
           </li>
         </ul>
+      </div> */}
+      <div className=" py-10 sm:pb-10 flex flex-col gap-4 px-4">
+        <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
+          <li>
+            <a className="w-full flex flex-col" href="https://wa.me/542996156202">
+              <div className='flex items-center border-l border-isei-blue text-black font-medium py-2 px-4 gap-2'>
+                <Whatsapp /> Whatsapp ISEI
+              </div>
+              <span className='border-l border-zinc-200 text-gray-500 p-4'>
+                +54 299 6156202
+              </span>
+            </a>
+          </li>
+          <li>
+            <a className="w-full flex flex-col" href="https://wa.me/542996348740">
+              <div className='flex items-center border-l border-isei-blue text-black font-medium py-2 px-4 gap-2'>
+                <Whatsapp /> Tec. Sup. en Deporte Social
+              </div>
+              <span className='border-l border-zinc-200 text-gray-500 p-4'>
+                +54 299 6348740
+              </span>
+            </a>
+          </li>
+          <li>
+            <a className="w-full flex flex-col" href="mailto:institutosuperiorisei@gmail.com">
+              <div className='flex items-center border-l border-isei-blue text-black font-medium py-2 px-4 gap-2'>
+                <MailIcon />  Correo electrónico
+              </div>
+              <span className='border-l border-zinc-200 text-gray-500 p-4'>
+                institutosuperiorisei@gmail.com
+              </span>
+            </a>
+          </li>
+          <li className='w-full flex flex-col items-center justify-center'>
+            <div className='bg-blue-500 rounded-md text-white font-medium py-2 px-4 gap-4 flex items-center'>
+              <a className="flex items-center gap-1" href="https://www.facebook.com/ISEINQN/" target="_blank" >
+                <Facebook /> Visitanos en Facebook
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
       <div className="bg-isei-footer rounded-xl px-4 py-6 md:py-8 lg:py-8 flex flex-col gap-4 relative overflow-hidden">
         <div className="absolute h-2/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
@@ -29,10 +71,7 @@ export function Blockquote() {
           </svg>
           <blockquote>
             <p className="text-white text-center text-lg md:text-xl italic text-pretty">
-              “El acompañamiento con respeto, empatía, igualdad, solidaridad, unidad y gratitud, son algunos
-              de los valores que promovemos desde el Instituto ISEI. Nos interesamos especialmente en el
-              bienestar de cada persona, impulsándola para que pueda crecer, desarrollarse y encontrar su
-              potencial en aquello que la haga feliz y plena.”
+              “En el ISEI, educar es mucho más que transmitir y construir conocimientos: es estimular y potenciar personas comprometidas con el diálogo, el respeto y la construcción de una comunidad restaurativa.”
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-10 space-x-3">

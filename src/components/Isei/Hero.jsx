@@ -44,15 +44,7 @@ export function Hero() {
               className='w-full sm:w-auto justify-center select-none cursor-pointer flex items-center gap-4 bg-isei-blue border-2 border-isei-blue transition-colors duration-200 hover:border-isei-dark text-white hover:bg-isei-dark px-6 py-3 rounded-lg'>
               Ir al campus virtual <LinkIcon />
             </motion.a>
-            <motion.a
-              href='https://campusvirtualisei.com/pdf/invernadero_calf_fundacion.pdf'
-              target='_blank'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className='w-full sm:w-auto justify-center select-none cursor-pointer flex items-center gap-4 border-2 text-isei-nav border-isei-nav transition-colors duration-200 px-6 py-3 rounded-lg hover:bg-isei-nav hover:text-white'>
-              Invernadero con Energía Solar <FileTypePDF />
-            </motion.a>
+          
           </div>
         </div>
         <img src="/isei_logo_enca.png" className='h-28 md:h-40' alt="" />
