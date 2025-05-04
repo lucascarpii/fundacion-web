@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRightIcon } from "../../icons/ArrowRight";
 import { runCode } from "../hooks/useRunCode";
+import { formatDate } from "../../lib/tmn";
 
 export const LatestArticles = () => {
   const [articles, setArticles] = useState([]);
@@ -12,11 +13,7 @@ export const LatestArticles = () => {
       const fetchedArticles = response.map((article) => ({
         id: article.id,
         title: article.title,
-        date: new Date(article.publish_date).toLocaleDateString("es-ES", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        }),
+        date: formatDate(article.publish_date).fechaCarta,
         description: article.short_description,
         imageUrl: article.featured_image_url,
       }));
