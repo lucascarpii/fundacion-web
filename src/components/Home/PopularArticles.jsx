@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { runCode } from "../hooks/useRunCode";
+import { formatDate } from "../../lib/tmn";
+
 
 export const PopularArticles = () => {
   const [articles, setArticles] = useState([]);
@@ -10,11 +12,7 @@ export const PopularArticles = () => {
       const fetchedArticles = response.map((article) => ({
         id: article.id,
         title: article.title,
-        date: new Date(article.publish_date).toLocaleDateString("es-ES", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        }),
+        date: formatDate(article.publish_date).fechaCarta,
         description: article.short_description,
         imageUrl: article.featured_image_url,
         isMain: article.is_popular === "1",
