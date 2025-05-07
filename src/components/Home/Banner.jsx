@@ -47,7 +47,7 @@ export function Banner() {
             {streamData.description}
           </p>
         </div>
-        <a href="/" className="flex text-sm items-center gap-3 px-6 py-1.5 text-white bg-black rounded-lg">
+        <a href={streamData.url} target="_blank" rel="noopener noreferrer" className="flex text-sm items-center gap-3 px-6 py-1.5 text-white bg-black rounded-lg">
           Ir a Ver
           <LinkIcon className="size-4" />
         </a>

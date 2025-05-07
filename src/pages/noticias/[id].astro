@@ -1,0 +1,92 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
+import { formatDate } from "../../lib/tmn";
+import { runCode } from "../../components/hooks/useRunCode";
+import { ArrowRightIcon } from "../../icons/ArrowRight";
+
+export const prerender = false; // Not needed in 'server' mode
+const { resource, id } = Astro.params;
+
+const fetchArticleData = async () => {
+  const response = await runCode(`-st news -wr id[${id}]`);
+  const fetchedArticleData = response.map((article) => ({
+    id: article.id,
+    title: article.title,
+    date: formatDate(article.publish_date)?.fechaCarta,
+    description: article.short_description,
+    content: article.content,
+    imageUrl: article.featured_image_url,
+  }));
+  return fetchedArticleData[0];
+};
+
+const articleData = await fetchArticleData();
+
+const fetchRelatedArticles = async () => {
+  const response = await runCode(`-st news -wr category_id['${articleData.category_id}'] AND id<>${articleData.id} -lt 4`);
+  console.log(response);
+  const relatedArticles = response
+    .filter((article) => article.id !== articleData.id) // Excluir el artículo actual
+    .map((article) => ({
+      id: article.id,
+      title: article.title,
+      imageUrl: article.featured_image_url,
+    }));
+  return relatedArticles[0] ? relatedArticles : []; // Retornar un array vacío si no hay artículos relacionados
+};
+
+const relatedArticles = await fetchRelatedArticles();
+---
+
+<Layout>
+  <Header theme="light" client:visible />
+
+  <article class="max-w-screen-xl mx-auto p-6 mt-[90px] border-t grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="flex flex-col col-span-2">
+      <a href="/" class="flex items-center gap-2 mb-8">
+        <ArrowRightIcon className="rotate-180" />
+        Volver atrás
+      </a>
+      <h1 class="text-3xl font-bold mb-4">{articleData.title}</h1>
+      <p class="text-gray-500 mb-6">{articleData.date}</p>
+      <img
+        src={articleData.imageUrl}
+        alt={articleData.title}
+        class="w-full h-auto mb-6 aspect-video object-cover"
+      />
+      <p class="text-lg text-gray-700 mb-4">{articleData.description}</p>
+      <div class="prose max-w-none" set:html={articleData.content} />
+    </div>
+    <div class="bg-gray-50 h-full w-full p-4">
+      <h2 class="text-xl font-bold mb-4">Artículos relacionados</h2>
+      {relatedArticles.length > 0 ? (
+        <ul class="space-y-4">
+          {relatedArticles.map((article) => (
+            <li>
+              <a href={`/noticias/${article.id}`} class="flex items-center gap-4">
+                <img
+                  src={article.imageUrl}
+                  alt={article.title}
+                  class="w-16 h-16 object-cover rounded"
+                />
+                <span class="text-lg font-medium">{article.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="text-gray-500">No hay artículos relacionados disponibles.</p>
+      )}
+    </div>
+  </article>
+
+  <div class="bg-isei-footer relative overflow-hidden">
+    <div
+      class="w-80 lg:w-4/12 aspect-square rounded-full bg-[#3753b0] absolute lg:-top-[30rem] lg:left-[12rem] blur-[150px] lg:blur-[250px]"
+    >
+    </div>
+    <Footer client:visible />
+  </div>
+</Layout>

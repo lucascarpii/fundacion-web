@@ -7,15 +7,28 @@ export const LatestArticles = () => {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
+  const categoryColors =
+  {
+    1: "bg-colegio",
+    2: "bg-isei-blue",
+    3: "bg-deporte",
+    4: "bg-comunicacion",
+    5: "bg-yellow-500",
+    6: "bg-mediacion",
+    7: "bg-lime-500",
+  }
+
   useEffect(() => {
     const fetchArticles = async () => {
-      const response = await runCode('-st news -wr is_popular[0];');
+      const response = await runCode('-sl news.id, title, publish_date, short_description, featured_image_url, category_id, categories.id, categories.name -fr news -ij categories -o categories.id -ig news.category_id -wr is_popular[0] -ob news.id -ds;');
       const fetchedArticles = response.map((article) => ({
         id: article.id,
         title: article.title,
         date: formatDate(article.publish_date).fechaCarta,
         description: article.short_description,
         imageUrl: article.featured_image_url,
+        categoryId: article.category_id,
+        category: article.name,
       }));
       setArticles(fetchedArticles);
     };
@@ -62,15 +75,17 @@ export const LatestArticles = () => {
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginatedArticles.map((article) => (
-              <div key={article.id} className="flex flex-col">
+              <a href={`/noticias/${article.id}`} key={article.id} className="flex flex-col">
                 <div
-                  className="bg-gray-300 w-full aspect-[4/3] mb-4"
+                  className="bg-gray-300 w-full aspect-[4/3] mb-4 relative"
                   style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
-                ></div>
+                >
+                  <span className={`absolute text-white ${categoryColors[article.categoryId]} text-sm px-2 py-[1px] rounded-full top-4 right-4`}>{article.category}</span>
+                </div>
                 <p className="text-sm text-gray-500">{article.date}</p>
                 <h3 className="text-xl font-semibold mt-2">{article.title}</h3>
                 <p className="text-gray-700 mt-2">{article.description}</p>
-              </div>
+              </a>
             ))}
           </div>
 

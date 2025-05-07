@@ -3,7 +3,7 @@ async function runCode(input) {
     throw new Error('La entrada debe ser una cadena de texto');
   }
   try {
-    const response = await fetch('https://admin.tamnora.com/run-code', {
+    const response = await fetch('https://fundacion.colegionqnoeste.com/run-code', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
