@@ -20,9 +20,9 @@ export const LatestArticles = () => {
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const response = await runCode('-sl news.id, title, publish_date, short_description, featured_image_url, category_id, categories.id, categories.name -fr news -ij categories -o categories.id -ig news.category_id -wr is_popular[0] -ob news.id -ds;');
+      const response = await runCode('-sl news.id -> news_id, title, publish_date, short_description, featured_image_url, category_id, categories.id, categories.name -fr news -ij categories -o categories.id -ig news.category_id -wr is_popular[0] -ob news.id -ds;');
       const fetchedArticles = response.map((article) => ({
-        id: article.id,
+        id: article.news_id,
         title: article.title,
         date: formatDate(article.publish_date).fechaCarta,
         description: article.short_description,
